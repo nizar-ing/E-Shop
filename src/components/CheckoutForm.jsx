@@ -7,7 +7,7 @@ export default function CheckoutForm({ onSubmit }) {
     const { pending } = useFormStatus();
 
     return (
-        <form action={onSubmit} className='space-y-5'>
+        <form action={onSubmit} className='space-y-5 order-2 md:order-1'>
             <div>
                 <label
                     htmlFor='name'

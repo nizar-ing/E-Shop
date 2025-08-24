@@ -9,7 +9,7 @@ import checkoutIcon from "../assets/checkout.png";
 export default function Header() {
     const {items, cartCount} = use(CartContext);
     return (
-        <header className="flex items-center justify-between bg-sky-700 text-white p-4">
+        <header className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between bg-sky-700 text-white p-4">
             <NavLink to='/' className="hover:opacity-80 transition-opacity duration-300">
                 <h1 className="flex items-center justify-start gap-2 text-lg font-bold">
                     <House />

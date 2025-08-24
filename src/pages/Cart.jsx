@@ -35,7 +35,7 @@ function Cart() {
                                     />
                                     <div className='flex-1'>
                                         <h3 className='text-sm md:text-lg font-semibold'>{item.title}</h3>
-                                        <p className='text-sky-900 font-semibold'>${item.price}</p>
+                                        <p className='text-sky-900 font-semibold'>{item.price}€</p>
                                     </div>
                                     <div className='flex items-center gap-2'>
                                         <button
@@ -64,7 +64,7 @@ function Cart() {
                         <div className='p-6 bg-gray-50'>
                             <div className='flex justify-between items-center mb-6'>
                                 <span className='text-lg md:text-xl lg:text-2xl text-sky-900 font-semibold'>Total: </span>
-                                <span className='text-lg md:text-xl lg:text-2xl text-sky-900 font-bold'>${cartTotal.toFixed(2)}</span>
+                                <span className='text-lg md:text-xl lg:text-2xl text-sky-900 font-bold'>{cartTotal.toFixed(2)}€</span>
                             </div>
                             <div className='flex justify-end'>
                                 <Link
